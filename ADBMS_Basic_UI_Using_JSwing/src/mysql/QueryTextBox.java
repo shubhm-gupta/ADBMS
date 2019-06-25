@@ -64,7 +64,7 @@ public class QueryTextBox extends JFrame {
 			public void actionPerformed(ActionEvent arg0) {
 				try {
 					Class.forName("com.mysql.jdbc.Driver");
-					Connection con=DriverManager.getConnection("jdbc:mysql://fall2018dbshubham.cutrzcvjwnrd.us-east-2.rds.amazonaws.com:3306/ADBMS", "sgupta37", "Avenger220");
+					Connection con=DriverManager.getConnection("awslink", "username", "password");
 					Statement stmt=con.createStatement();
 					String sql= textArea.getText();
 					ResultSet rs=stmt.executeQuery(sql);
