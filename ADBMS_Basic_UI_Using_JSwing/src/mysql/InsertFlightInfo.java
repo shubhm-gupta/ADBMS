@@ -134,7 +134,7 @@ public class InsertFlightInfo extends JFrame {
 			public void actionPerformed(ActionEvent arg0) {
 				try {
 					Class.forName("com.mysql.jdbc.Driver");
-					Connection c = DriverManager.getConnection("jdbc:mysql://fall2018dbshubham.cutrzcvjwnrd.us-east-2.rds.amazonaws.com:3306/ADBMS", "sgupta37", "Avenger220");
+					Connection c = DriverManager.getConnection("awslink", "username", "password");
 					Statement stmt = c.createStatement();
 					String sql="Insert into Flight(airline_no,airline_name,source,destination,date,departure_time,arrival_time) "
 							+ "values('"+airlineNumber.getText()+"', '"+airlineName.getText()+"','"+source.getText()+"', '"+destination.getText()+"','"+date.getText()+"', "
